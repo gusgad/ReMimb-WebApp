@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+   <html ng-app="ReMimb">
+   
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>ReMimb</title>
+        <meta name="description" content="">
+        <!-- Fonts -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        
+        <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+        
+        <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">                
+                
+
+        
+        <!-- CSS Stylesheet and Normalize.css -->
+        <link rel="stylesheet" href="assets/css/normalize.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+               
+               
+        <!-- Angular -->
+        <script src="https://code.angularjs.org/1.5.7/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+        
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    </head>
+    
+    <body>
+        <!-- Main navigation bar -->
+        <input type="checkbox" id="toggler-1">
+        <div class="sidebar">
+            <div class="exit">
+                <label for="toggler-1">&#9747;</label>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="icon"><label for="toggler-1">&#9776;</label></div>
+            <div class="title"><h1>ReMimb</h1></div>
+            <div class="add">
+                <label for="toggler-2">&#x270e;</label>
+            </div>
+        </div>
+        
+        <!-- Views -->
+        <div ng-view></div>
+       
+
+      
+      
+      
+       
+       <!-- Angular scripts -->
+       <script src="app/app.js"></script>
+       <script src="app/app.config.js"></script>
+       <script src="app/controllers/main.controller.js"></script>
+       <script src="app/directives/card.directive.js"></script>
+    </body>
+</html>

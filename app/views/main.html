@@ -1,0 +1,29 @@
+<div class="search-tab">
+    <input class="search-input" type="search" placeholder="&#128269; Search">
+</div>
+<div class="wrapper">
+    <card-directive></card-directive>
+</div>
+
+<input type="checkbox" id="toggler-2">
+<div class="bottom-sidebar">
+            <div class="exit">
+                <label for="toggler-2">&#9747;</label>
+            </div>
+            <form ng-submit="addItem()">
+                <input type="file" class="file">
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="sample1" ng-model="item.title">
+                    <label class="mdl-textfield__label" for="sample1">Title</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="sample1" ng-model="item.description">
+                    <label class="mdl-textfield__label" for="sample1">Description</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="sample1" ng-model="item.place">
+                    <label class="mdl-textfield__label" for="sample1">Last known place</label>
+                </div>
+                <input type="submit" value="Add">
+            </form>
+        </div>
