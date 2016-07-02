@@ -2,12 +2,8 @@ app.config(['$locationProvider', '$routeProvider', function config($locationProv
     
       $routeProvider.
         when('/', {
-          templateUrl: 'app/views/login.html',
-          controller: 'loginController'
-        }).
-        when('/main', {
           templateUrl: 'app/views/main.html',
-          controller: 'loginController'
+          controller: 'mainController'
         }).
         when('/favorites', {
           template: '<p>favs</p>'
