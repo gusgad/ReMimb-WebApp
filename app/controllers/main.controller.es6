@@ -23,5 +23,10 @@ app.controller('mainController', ['$scope', '$location', '$firebaseArray', funct
     $scope.item.description = '';
     $scope.item.place = ''
   };
+    
+
+    $scope.makeFav = function(id) {
+        ref.child(id).update({fav: true})
+    }
 
 }]);

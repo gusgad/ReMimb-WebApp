@@ -131,8 +131,7 @@ body {
       font-size: 30px;
       position: absolute;
       top: 5px;
-      right: 5px;
-      color: white; }
+      right: 5px; }
     .card .card-image h2 {
       margin: 0px 0px 15px 20px;
       font-size: 24px;
@@ -232,5 +231,11 @@ body {
   display: none; }
   #toggler-2:checked + .bottom-sidebar {
     transform: translateY(-1%); }
+
+.active {
+  color: gold; }
+
+.not-active {
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

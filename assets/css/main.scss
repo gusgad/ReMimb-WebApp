@@ -159,7 +159,6 @@ body {
             position: absolute;
             top: 5px;
             right: 5px;
-            color: white;
         }
         h2 {
             margin: 0px 0px 15px 20px;
@@ -278,7 +277,13 @@ body {
     }
 }
 
+.active {
+    color: gold;
+}
 
+.not-active {
+    color: white;
+}
 
 
 

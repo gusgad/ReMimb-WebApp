@@ -1,6 +1,6 @@
 <div class="card" ng-repeat="item in items | filter: search">
     <div class="card-image">
-        <i>&#9734;</i>
+        <i ng-class="{'active': item.fav, 'not-active': !item.fav}" ng-click="makeFav(item.$id)">&#9734;</i>
         <h2>{{ item.title }}</h2>
     </div>
     <div class="card-description">
