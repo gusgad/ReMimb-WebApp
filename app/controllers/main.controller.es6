@@ -1,17 +1,12 @@
-app.controller('mainController', ['$scope', '$location', '$firebaseArray', function ($scope, $location, $firebaseArray) {
-    
+app.controller('mainController', ['$scope', 'cardInfo', '$location', '$firebaseArray', function ($scope, cardInfo, $location, $firebaseArray) {
+
   /* DB operations */
-    
-  // DB reference
-    let ref = new Firebase("https://remimb-webapp-855cc.firebaseio.com/")
-    
-    $scope.items = $firebaseArray(ref)
 
-
+  $scope.items = $firebaseArray(cardInfo);
 
   // Add items
   $scope.addItem = function () {
-    ref.push({
+    cardInfo.push({
       title: $scope.item.title,
       description: $scope.item.description,
       place: $scope.item.place,
@@ -21,12 +16,12 @@ app.controller('mainController', ['$scope', '$location', '$firebaseArray', funct
     // Clear the inputs after submitting
     $scope.item.title = '';
     $scope.item.description = '';
-    $scope.item.place = ''
+    $scope.item.place = '';
+  };
+
+  $scope.makeFav = function (id) {
+    cardInfo.child(id).update({ fav: true });
   };
     
-
-    $scope.makeFav = function(id) {
-        ref.child(id).update({fav: true})
-    }
 
 }]);

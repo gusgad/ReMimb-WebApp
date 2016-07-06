@@ -24,7 +24,7 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
     transform: translateX(-102%);
     will-change: transform;
-    transition: 0.2s cubic-bezier(0,0,0.3,1);
+    transition: 0.2s cubic-bezier(0,0,0.3,1) all;
     .sidebar-links {
         padding: 0 5px;
         display: flex;
@@ -285,9 +285,33 @@ body {
     color: white;
 }
 
+.active-bar {
+    background-color: darkslategray;
+}
+
+.fav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
 
 
+/* Angular animations */
+.animation {
+  -webkit-transition: 0.3s cubic-bezier(0,0,0.3,1) all;
+}
 
+.animation.ng-enter {
+  opacity: 0;
+}
 
+.animation.ng-leave {
+  opacity: 1;
+}
 
+.animation.ng-enter.ng-enter-active {
+  opacity: 1;
+}
 
+.animation.ng-leave.ng-leave-active {
+  opacity: 0;
+}

@@ -1,2 +1,2 @@
-const app = angular.module('ReMimb', ['ngRoute', 'firebase'])
+const app = angular.module('ReMimb', ['ngRoute', 'firebase', 'ngAnimate'])
 

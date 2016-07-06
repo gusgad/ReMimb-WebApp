@@ -7,6 +7,7 @@ app.config(['$locationProvider', '$routeProvider', function config($locationProv
     templateUrl: 'app/views/main.html',
     controller: 'mainController'
   }).when('/favorites', {
-    template: '<p>favs</p>'
-  }).otherwise('/main');
+    templateUrl: 'app/views/favorites.html',
+    controller: 'favoritesController'
+  }).otherwise('/');
 }]);
