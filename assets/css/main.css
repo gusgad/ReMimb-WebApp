@@ -111,8 +111,11 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  flex-wrap: wrap;
-  flex-direction: column; }
+  flex-wrap: wrap; }
+  .wrapper card-directive, .wrapper favcard-directive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
 
 .card {
   width: 290px;
@@ -158,6 +161,23 @@ body {
     .card .card-controls button {
       color: white;
       margin: 0px 20px; }
+
+favcard-directive .card {
+  width: 100%;
+  height: 100px;
+  display: flex; }
+  favcard-directive .card .card-image {
+    width: 50%;
+    border-radius: 2px;
+    height: 100%; }
+    favcard-directive .card .card-image h2 {
+      font-size: 16px; }
+  favcard-directive .card .card-description {
+    height: 100%; }
+    favcard-directive .card .card-description h3 {
+      font-size: 14px; }
+  favcard-directive .card .card-controls {
+    display: none; }
 
 .bottom-sidebar {
   width: 101%;
@@ -260,5 +280,8 @@ body {
 
 .animation.ng-leave.ng-leave-active {
   opacity: 0; }
+
+.card-expanded {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

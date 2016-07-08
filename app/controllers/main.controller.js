@@ -22,7 +22,16 @@ app.controller('mainController', ['$scope', 'cardInfo', '$location', '$firebaseA
     $scope.item.place = '';
   };
 
+  // Add the card to favorites
   $scope.makeFav = function (id) {
     cardInfo.child(id).update({ fav: true });
   };
+
+  /* Card expanding */
+
+  //$scope.isExpanded = false
+  /*$scope.expand = function(event) {
+    //$scope.isExpanded = !$scope.isExpanded
+    angular.element(event.currentTarget)
+  }*/
 }]);

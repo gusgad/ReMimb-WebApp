@@ -1,6 +1,10 @@
-app.directive('cardDirective', [function() {
+app.directive('cardDirective', ['$timeout', function($timeout) {
     return {
         restrict: 'E',
-        templateUrl: 'app/views/card.html'
+        scope: false,
+        templateUrl: 'app/views/card.html',
+        link: function(scope, element, attrs) {
+            console.log(element[0][1])
+        }
     }
 }])
