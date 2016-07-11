@@ -1,8 +1,9 @@
-app.controller('mainController', ['$scope', 'cardInfo', '$location', '$firebaseArray', function ($scope, cardInfo, $location, $firebaseArray) {
+app.controller('mainController', ['$scope', 'cardInfo', '$location', '$firebaseArray', '$routeParams', function ($scope, cardInfo, $location, $firebaseArray, routeParams) {
 
   /* DB operations */
 
-  $scope.items = $firebaseArray(cardInfo);
+  let data = $firebaseArray(cardInfo);
+  $scope.items = data
 
   // Add items
   $scope.addItem = function () {
@@ -24,14 +25,23 @@ app.controller('mainController', ['$scope', 'cardInfo', '$location', '$firebaseA
     cardInfo.child(id).update({ fav: true });
   };
     
-
   /* Card expanding */
   
-  //$scope.isExpanded = false
-  /*$scope.expand = function(event) {
-    //$scope.isExpanded = !$scope.isExpanded
-    angular.element(event.currentTarget)
-  }*/
+  $scope.expand = function(event) {
+    event.currentTarget.parentElement.parentElement.classList.toggle('card-expanded')    
+  }
   
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }]);

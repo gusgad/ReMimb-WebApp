@@ -26,10 +26,13 @@ body {
     will-change: transform;
     transition: 0.2s cubic-bezier(0,0,0.3,1) all;
     .sidebar-links {
+        width: 100%;
+        height: 250px;
         padding: 0 5px;
-        display: flex;
-        flex-direction: column;
         a {
+            width: 100%;
+            display: block;
+            float: left;
             margin: 3px 0;
             padding: 15px 0 15px 10px;
             background-color: rgba(0,0,0,0.2);
@@ -63,19 +66,20 @@ body {
 
 .navigation {
     width: 100%;
-    padding: 25px 0 25px 10px;
+    padding: 25px 10px 25px 10px;
     background-color: $bold8;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
-    right: 0px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     z-index: 1;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
     .icon {
         width: 10%;
-        margin-left: 10px;
         label {
             font-size: 24px;
             font-weight: 700;
@@ -94,13 +98,11 @@ body {
         }
     }
     .add {
-        width: 15%;
-        margin-right: 20px;
+        width: 10%;
         font-size: 24px;
         font-weight: 700;
         color: white;
-        display: flex;
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 }
 
@@ -132,7 +134,7 @@ body {
 .wrapper {
     width: 90%;
     height: auto;
-    margin: 0px auto 0 auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,6 +144,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
     }
 }
 
@@ -149,7 +152,7 @@ body {
 .card {
     width: 290px;
     height: 290px;
-    margin: 20px 5px;
+    margin: 20px 0;
     border-radius: 4px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
     .card-image {
@@ -188,13 +191,15 @@ body {
     }
     .card-controls {
         width: 100%;
-        height: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        button {
-            color: white;
-            margin: 0px 20px;
+        a {
+            transform: translateY(10px);
+            margin: 0 20px;
+        }
+        #left {
+            float: left
+        }
+        #right {
+            float: right;
         }
     }
 }
@@ -246,6 +251,7 @@ favcard-directive {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        align-content: center;
         input {
             width: 80%;
             height: 50px;
@@ -283,6 +289,7 @@ favcard-directive {
         .item-submit {
             width: 200px;
             height: 50px;
+            margin: 0 auto;
             background-color: rgb(255,64,129);
             border: none;
             border-radius: 4px;
@@ -348,5 +355,6 @@ favcard-directive {
 
 
 .card-expanded {
-    display: none;
+    width: 95vw;
+    height: 80vh;
 }

@@ -1,6 +1,17 @@
 module.exports = function(grunt) {
  
   grunt.initConfig({
+      
+    postcss: {
+    options: {
+       processors: [
+        require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes 
+      ]
+    },
+    dist: {
+      src: 'assets/css/main.css'
+    }
+  },
     
 //sass
       sass: {
@@ -16,7 +27,7 @@ module.exports = function(grunt) {
 			sass: {
 				files: 'assets/css/*.scss',
 				tasks: ['sass']
-			},
+			}
             //scripts: {
                 //files: ["./app/**/*.js", "./index.html"],
                 //tasks: ["browserify"]
@@ -54,6 +65,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-postcss');
     
   grunt.registerTask('default', ['connect', 'watch']);
 };
