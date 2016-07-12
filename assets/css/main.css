@@ -14,10 +14,8 @@ body {
   overflow-y: hidden;
   z-index: 2;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  -webkit-transform: translateX(-102%);
-          transform: translateX(-102%);
+  transform: translateX(-102%);
   will-change: transform;
-  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3, 1) all;
   transition: 0.2s cubic-bezier(0, 0, 0.3, 1) all; }
   .sidebar .sidebar-links {
     width: 100%;
@@ -38,15 +36,9 @@ body {
 
 .exit {
   height: 74px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: center;
+  align-items: center; }
   .exit label {
     font-size: 24px;
     font-weight: 700;
@@ -55,23 +47,15 @@ body {
 #toggler-1 {
   display: none; }
   #toggler-1:checked + .sidebar {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+    transform: translateX(0); }
 
 .navigation {
   width: 100%;
   padding: 25px 10px 25px 10px;
   background-color: #4527A0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -87,12 +71,8 @@ body {
       color: white; }
   .navigation .title {
     width: 80%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    justify-content: center; }
     .navigation .title h1 {
       font-family: 'Lato', sans-serif;
       font-size: 24px;
@@ -103,23 +83,16 @@ body {
     font-size: 24px;
     font-weight: 700;
     color: white;
-    -webkit-transform: rotateY(-180deg);
-            transform: rotateY(-180deg); }
+    transform: rotateY(-180deg); }
 
 .search-tab {
   width: 100%;
   height: 40px;
   margin-top: 73px;
   background-color: #512DA8;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: center;
+  align-items: center; }
   .search-tab .search-input {
     min-width: 220px;
     height: 25px;
@@ -136,31 +109,16 @@ body {
   width: 90%;
   height: auto;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  flex-wrap: wrap; }
   .wrapper card-directive, .wrapper favcard-directive {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column; }
 
 .card {
   width: 290px;
@@ -172,12 +130,8 @@ body {
     width: 100%;
     height: 60%;
     background-color: #26A69A;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
     position: relative; }
     .card .card-image i {
       font-size: 30px;
@@ -193,12 +147,8 @@ body {
   .card .card-description {
     width: 100%;
     height: 20%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     border-bottom: 1px solid #E0E0E0; }
     .card .card-description h3 {
       margin: 0px 0px 0px 20px;
@@ -207,20 +157,21 @@ body {
       color: #BDBDBD; }
   .card .card-controls {
     width: 100%; }
-    .card .card-controls a {
-      -webkit-transform: translateY(10px);
-              transform: translateY(10px);
+    .card .card-controls a, .card .card-controls label {
+      transform: translateY(10px);
       margin: 0 20px; }
     .card .card-controls #left {
-      float: left; }
+      float: left;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      color: #BDBDBD;
+      transform: translateY(18px); }
     .card .card-controls #right {
       float: right; }
 
 favcard-directive .card {
   width: 100%;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
   favcard-directive .card .card-image {
     width: 50%;
@@ -247,29 +198,17 @@ favcard-directive .card {
   overflow-y: hidden;
   z-index: 2;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   will-change: transform;
-  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3, 1);
   transition: 0.2s cubic-bezier(0, 0, 0.3, 1); }
   .bottom-sidebar form {
     width: 100%;
     height: 80vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center; }
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center; }
     .bottom-sidebar form input {
       width: 80%;
       height: 50px;
@@ -320,8 +259,7 @@ favcard-directive .card {
 #toggler-2 {
   display: none; }
   #toggler-2:checked + .bottom-sidebar {
-    -webkit-transform: translateY(-1%);
-            transform: translateY(-1%); }
+    transform: translateY(-1%); }
 
 .active {
   color: gold; }
@@ -355,3 +293,10 @@ favcard-directive .card {
 .card-expanded {
   width: 95vw;
   height: 80vh; }
+
+.lol {
+  height: 300px;
+  width: 100%;
+  background-color: green; }
+
+/*# sourceMappingURL=main.css.map */

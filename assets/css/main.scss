@@ -191,12 +191,16 @@ body {
     }
     .card-controls {
         width: 100%;
-        a {
+        a, label {
             transform: translateY(10px);
             margin: 0 20px;
         }
         #left {
-            float: left
+            float: left;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            color: #BDBDBD;
+            transform: translateY(18px);
         }
         #right {
             float: right;
@@ -358,3 +362,19 @@ favcard-directive {
     width: 95vw;
     height: 80vh;
 }
+
+
+.lol {
+    height: 300px;
+    width: 100%;
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+

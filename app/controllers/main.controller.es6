@@ -1,4 +1,4 @@
-app.controller('mainController', ['$scope', 'cardInfo', '$location', '$firebaseArray', '$routeParams', function ($scope, cardInfo, $location, $firebaseArray, routeParams) {
+app.controller('mainController', ['$scope', 'cardInfo', '$location', '$firebaseArray', '$routeParams', '$http', '$timeout', function ($scope, cardInfo, $location, $firebaseArray, $routeParams, $http, $timeout) {
 
   /* DB operations */
 
@@ -25,14 +25,7 @@ app.controller('mainController', ['$scope', 'cardInfo', '$location', '$firebaseA
     cardInfo.child(id).update({ fav: true });
   };
     
-  /* Card expanding */
-  
-  $scope.expand = function(event) {
-    event.currentTarget.parentElement.parentElement.classList.toggle('card-expanded')    
-  }
-  
 
-  
   
   
   
