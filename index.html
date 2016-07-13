@@ -50,7 +50,7 @@
         <div class="navigation">
             <div class="icon"><label for="toggler-1">&#9776;</label></div>
             <div class="title"><h1>ReMimb</h1></div>
-            <div class="add">
+            <div ng-controller="favoritesController" class="add" ng-hide="location === '/favorites'">
                 <label for="toggler-2">&#x270e;</label>
             </div>
         </div>

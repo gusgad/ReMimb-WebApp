@@ -71,7 +71,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     -webkit-backface-visibility: hidden;
@@ -130,6 +130,19 @@ body {
     }
 }
 
+.fav-title {
+    height: 40px;
+    width: 100%;
+    background-color: $normal6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -2px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+}
 
 .wrapper {
     width: 90%;
@@ -145,6 +158,9 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
+    }
+    favcard-directive {
+        width: 100%;
     }
 }
 
