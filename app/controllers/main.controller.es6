@@ -6,19 +6,23 @@ app.controller('mainController', ['$scope', 'cardInfo', '$location', '$firebaseA
   $scope.items = data
 
   // Add items
-  $scope.addItem = function () {
+  $scope.addItem = function () {      
+   
     cardInfo.push({
       title: $scope.item.title,
       description: $scope.item.description,
       place: $scope.item.place,
       fav: false
-    });
-
+    })   
+      
+      
     // Clear the inputs after submitting
     $scope.item.title = '';
     $scope.item.description = '';
     $scope.item.place = '';
-  };
+};  
+      
+
 
   // Add the card to favorites
   $scope.makeFav = function (id) {
@@ -26,7 +30,6 @@ app.controller('mainController', ['$scope', 'cardInfo', '$location', '$firebaseA
   };
     
 
-  
   
   
   

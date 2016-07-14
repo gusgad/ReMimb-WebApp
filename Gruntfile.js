@@ -27,7 +27,11 @@ module.exports = function(grunt) {
 			sass: {
 				files: 'assets/css/*.scss',
 				tasks: ['sass']
-			}
+			},
+            postcss: {
+                files: 'assets/css/*.scss',
+				tasks: ['postcss']
+            }
             //scripts: {
                 //files: ["./app/**/*.js", "./index.html"],
                 //tasks: ["browserify"]

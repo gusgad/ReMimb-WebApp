@@ -10,6 +10,7 @@ app.controller('mainController', ['$scope', 'cardInfo', '$location', '$firebaseA
 
   // Add items
   $scope.addItem = function () {
+
     cardInfo.push({
       title: $scope.item.title,
       description: $scope.item.description,
