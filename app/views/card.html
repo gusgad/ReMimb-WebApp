@@ -1,5 +1,5 @@
 <div class="card animation" ng-repeat="item in items | filter: search">
-    <div class="card-image">
+    <div class="card-image" style="background-image: url({{ item.image }}); background-size: cover">
         <i ng-class="{'active': item.fav, 'not-active': !item.fav}" ng-click="makeFav(item.$id)">&#9734;</i>
         <h2>{{ item.title }}</h2>
     </div>
@@ -8,6 +8,6 @@
     </div>
     <div class="card-controls">
         <label id="left">&#9971; {{item.place}}</label>
-        <a id="right" class="remove-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="items.$remove(item)">Remove</a>
+        <a id="right" class="remove-btn" ng-click="items.$remove(item)">Remove</a>
     </div>
 </div>

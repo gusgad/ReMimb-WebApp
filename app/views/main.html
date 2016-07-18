@@ -13,22 +13,22 @@
     <form>
         <div class="file">
             <span>Upload a picture</span>
-            <input type="file" class="upload" />
+            <input type="file" ngf-select ng-model="picFile" accept="image/*" ngf-max-size="4MB" ngf-model-invalid="errorFile" class="upload" />
         </div>
-        <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="sample1" ng-model="item.title">
-            <label class="mdl-textfield__label" for="sample1">Title</label>
+        <div class="text">
+            <label for="sample1">Title</label>
+            <input type="text" id="sample1" ng-model="item.title">
         </div>
-        <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="sample1" ng-model="item.description">
-            <label class="mdl-textfield__label" for="sample1">Description</label>
+        <div class="text">
+            <label for="sample1">Description</label>
+            <input type="text" id="sample1" ng-model="item.description">
         </div>
-        <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="sample1" ng-model="item.place">
-            <label class="mdl-textfield__label" for="sample1">Last known place</label>
+        <div class="text">
+            <label for="sample1">Last known place</label>
+            <input type="text" id="sample1" ng-model="item.place">
         </div>
         <div class="adder">
-            <input ng-click="addItem()" class="item-submit" value="Add">
+            <input ng-click="addItem(picFile)" class="item-submit" value="Add">
         </div>
     </form>
 </div>

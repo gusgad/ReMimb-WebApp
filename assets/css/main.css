@@ -14,10 +14,8 @@ body {
   overflow-y: hidden;
   z-index: 2;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  -webkit-transform: translateX(-102%);
-          transform: translateX(-102%);
+  transform: translateX(-102%);
   will-change: transform;
-  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3, 1) all;
   transition: 0.2s cubic-bezier(0, 0, 0.3, 1) all; }
   .sidebar .sidebar-links {
     width: 100%;
@@ -39,14 +37,11 @@ body {
 .exit {
   height: 74px;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
   -ms-flex-pack: center;
-      -webkit-box-pack: center;
-          justify-content: center;
+      justify-content: center;
   -ms-flex-align: center;
-      -webkit-box-align: center;
-          align-items: center; }
+      align-items: center; }
   .exit label {
     font-size: 24px;
     font-weight: 700;
@@ -55,28 +50,22 @@ body {
 #toggler-1 {
   display: none; }
   #toggler-1:checked + .sidebar {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+    transform: translateX(0); }
 
 .navigation {
   width: 100%;
   padding: 25px 10px 25px 10px;
   background-color: #4527A0;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
   -ms-flex-direction: row;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          flex-direction: row;
+      flex-direction: row;
   -ms-flex-align: center;
-      -webkit-box-align: center;
-          align-items: center;
+      align-items: center;
   position: fixed;
   top: 0px;
   left: 0px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   z-index: 1;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
   .navigation .icon {
@@ -88,23 +77,21 @@ body {
   .navigation .title {
     width: 80%;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
     -ms-flex-pack: center;
-        -webkit-box-pack: center;
-            justify-content: center; }
+        justify-content: center; }
     .navigation .title h1 {
       font-family: 'Lato', sans-serif;
       font-size: 24px;
       font-weight: 300;
-      color: white; }
+      color: white;
+      letter-spacing: 1px; }
   .navigation .add {
     width: 10%;
     font-size: 24px;
     font-weight: 700;
     color: white;
-    -webkit-transform: rotateY(-180deg);
-            transform: rotateY(-180deg); }
+    transform: rotateY(-180deg); }
 
 .search-tab {
   width: 100%;
@@ -112,14 +99,11 @@ body {
   margin-top: 73px;
   background-color: #512DA8;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
   -ms-flex-pack: center;
-      -webkit-box-pack: center;
-          justify-content: center;
+      justify-content: center;
   -ms-flex-align: center;
-      -webkit-box-align: center;
-          align-items: center; }
+      align-items: center; }
   .search-tab .search-input {
     min-width: 220px;
     height: 25px;
@@ -137,14 +121,11 @@ body {
   width: 100%;
   background-color: #5E35B1;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
   -ms-flex-pack: center;
-      -webkit-box-pack: center;
-          justify-content: center;
+      justify-content: center;
   -ms-flex-align: center;
-      -webkit-box-align: center;
-          align-items: center;
+      align-items: center;
   position: relative;
   top: -2px;
   color: white;
@@ -156,43 +137,32 @@ body {
   height: auto;
   margin: 0 auto;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
   -ms-flex-pack: center;
-      -webkit-box-pack: center;
-          justify-content: center;
+      justify-content: center;
   -ms-flex-align: center;
-      -webkit-box-align: center;
-          align-items: center;
+      align-items: center;
   position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .wrapper card-directive {
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: center;
-        -webkit-box-pack: center;
-            justify-content: center;
+        justify-content: center;
     -ms-flex-direction: column;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            flex-direction: column; }
+        flex-direction: column; }
   .wrapper favcard-directive {
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: center;
-        -webkit-box-pack: center;
-            justify-content: center;
+        justify-content: center;
     -ms-flex-direction: column;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            flex-direction: column; }
+        flex-direction: column; }
 
 card-directive .card {
   width: 290px;
@@ -205,11 +175,9 @@ card-directive .card {
     height: 60%;
     background-color: #26A69A;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
     -ms-flex-align: end;
-        -webkit-box-align: end;
-            align-items: flex-end;
+        align-items: flex-end;
     position: relative; }
     card-directive .card .card-image i {
       font-size: 30px;
@@ -226,11 +194,9 @@ card-directive .card {
     width: 100%;
     height: 20%;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
     -ms-flex-align: center;
-        -webkit-box-align: center;
-            align-items: center;
+        align-items: center;
     border-bottom: 1px solid #E0E0E0;
     padding: 0 10px; }
     card-directive .card .card-description h3 {
@@ -241,19 +207,25 @@ card-directive .card {
   card-directive .card .card-controls {
     width: 100%; }
     card-directive .card .card-controls a, card-directive .card .card-controls label {
-      -webkit-transform: translateY(10px);
-              transform: translateY(10px); }
+      transform: translateY(12px); }
     card-directive .card .card-controls #left {
       float: left;
       font-family: 'Roboto', sans-serif;
       font-size: 12px;
       color: #BDBDBD;
-      -webkit-transform: translateY(20px);
-              transform: translateY(20px);
-      padding-left: 10px; }
+      transform: translateY(23px);
+      padding-left: 15px; }
     card-directive .card .card-controls #right {
+      padding: 10px 15px;
+      border-radius: 2px;
+      background-color: #ff4081;
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+      font-size: 14px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      color: white;
       float: right;
-      margin-right: 5px; }
+      margin-right: 10px; }
 
 favcard-directive {
   width: 100%; }
@@ -261,7 +233,6 @@ favcard-directive {
     height: 100px;
     width: 100%;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
     margin: 15px 0;
     border-radius: 4px;
@@ -290,18 +261,13 @@ favcard-directive {
       width: 60%;
       padding: 0 10px;
       display: -ms-flexbox;
-      display: -webkit-box;
       display: flex;
       -ms-flex-direction: column;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              flex-direction: column;
+          flex-direction: column;
       -ms-flex-pack: center;
-          -webkit-box-pack: center;
-              justify-content: center;
+          justify-content: center;
       -ms-flex-align: center;
-          -webkit-box-align: center;
-              align-items: center; }
+          align-items: center; }
       favcard-directive .card .card-description h3 {
         font-size: 12px;
         margin: 0px 20px;
@@ -320,39 +286,49 @@ favcard-directive {
   overflow-y: hidden;
   z-index: 2;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   will-change: transform;
-  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3, 1);
   transition: 0.2s cubic-bezier(0, 0, 0.3, 1); }
   .bottom-sidebar form {
     width: 100%;
     height: 80vh;
     display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
     -ms-flex-direction: column;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            flex-direction: column;
+        flex-direction: column;
     -ms-flex-pack: justify;
-        -webkit-box-pack: justify;
-            justify-content: space-between;
+        justify-content: space-between;
     -ms-flex-align: center;
-        -webkit-box-align: center;
-            align-items: center;
+        align-items: center;
     -ms-flex-line-pack: center;
         align-content: center; }
-    .bottom-sidebar form input {
+    .bottom-sidebar form .text {
       width: 80%;
-      height: 50px;
-      margin: 0 auto; }
-    .bottom-sidebar form label {
-      color: white;
-      font-family: 'Roboto', sans-serif;
-      font-size: 24px;
-      padding-bottom: 10px;
-      text-align: center; }
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; }
+      .bottom-sidebar form .text label {
+        display: block;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        margin-bottom: 5px; }
+      .bottom-sidebar form .text input {
+        width: 80%;
+        height: 30px;
+        padding: 1px 5px;
+        background-color: rgba(149, 117, 205, 0.5);
+        border: none;
+        border-radius: 3px;
+        -webkit-outline: none;
+        outline: none; }
     .bottom-sidebar form .file {
       position: relative;
       overflow: hidden;
@@ -383,7 +359,8 @@ favcard-directive {
       color: white;
       font-family: 'Roboto', sans-serif;
       font-size: 24px;
-      text-align: center; }
+      text-align: center;
+      text-transform: uppercase; }
 
 .close-icon {
   background-color: rgba(255, 64, 129, 0.6);
@@ -393,8 +370,7 @@ favcard-directive {
 #toggler-2 {
   display: none; }
   #toggler-2:checked + .bottom-sidebar {
-    -webkit-transform: translateY(-1%);
-            transform: translateY(-1%); }
+    transform: translateY(-1%); }
 
 .active {
   color: gold; }
@@ -411,7 +387,7 @@ favcard-directive {
 
 /* Angular animations */
 .animation {
-  -webkit-transition: 0.3s cubic-bezier(0, 0, 0.3, 1) all; }
+  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3, 1) all; }
 
 .animation.ng-enter {
   opacity: 0; }
