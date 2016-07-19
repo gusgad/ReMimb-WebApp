@@ -3,6 +3,7 @@ app.controller('mainController', ['$scope', 'cardInfo', 'Upload', '$firebaseArra
   /* DB operations */
 
   let data = $firebaseArray(cardInfo);
+    
   $scope.items = data
 
   // Add items
@@ -21,8 +22,6 @@ app.controller('mainController', ['$scope', 'cardInfo', 'Upload', '$firebaseArra
             fav: false,
             image: base64Urls
         });
-    }).then(function() {
-        document.getElementById('card-img').style.display = 'none'
     })
      
     

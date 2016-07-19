@@ -6,6 +6,7 @@ app.controller('mainController', ['$scope', 'cardInfo', 'Upload', '$firebaseArra
   /* DB operations */
 
   var data = $firebaseArray(cardInfo);
+
   $scope.items = data;
 
   // Add items
@@ -24,8 +25,6 @@ app.controller('mainController', ['$scope', 'cardInfo', 'Upload', '$firebaseArra
         fav: false,
         image: base64Urls
       });
-    }).then(function () {
-      document.getElementById('card-img').style.display = 'none';
     });
 
     // Clear the inputs after submitting
