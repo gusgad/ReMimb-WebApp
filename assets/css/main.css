@@ -27,6 +27,8 @@ body {
       margin-right: 5px;
       font-size: 20px;
       color: white; }
+    .sidebar .sidebar-links #info-link {
+      margin-right: 10px; }
     .sidebar .sidebar-links a {
       width: 100%;
       display: block;
@@ -39,6 +41,8 @@ body {
       font-family: 'Lato', sans-serif;
       color: white;
       border: 1px solid rgba(255, 64, 129, 0.1); }
+      .sidebar .sidebar-links a:active {
+        background-color: #9575CD; }
 
 .exit {
   height: 74px;
