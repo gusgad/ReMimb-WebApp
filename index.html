@@ -14,18 +14,19 @@
         
         <!-- Chrome, Firefox OS, Opera and Vivaldi -->
         <meta name="theme-color" content="black">
-        <!-- iOS Safari -->
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
         
-        <link rel="apple-touch-startup-image" href="/title.png">
+        <!-- iOS Safari -->
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="apple-mobile-web-app-title" content="ReMimb">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="apple-touch-startup-image" href="/title.png">
+
         
         <!-- Fonts -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet' type='text/css'>
                   
                   
         <!-- Angular -->
@@ -66,7 +67,7 @@
         
         <!-- Views -->
         <main ng-view class="animation"></main>
-        <span ng-controller="mainController" us-spinner="{lines: 10, radius: 20, width: 10, length: 4, opacity: 0.2, color: '#512DA8', speed: 1.3, trail: 50}" ng-show="items.length == 0"></span>
+        <span ng-controller="mainController" us-spinner="{lines: 10, radius: 20, width: 10, length: 4, opacity: 0.2, color: '#512DA8', speed: 2, trail: 50}" ng-show="items.length == 0"></span>
        
 
       
