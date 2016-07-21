@@ -2,10 +2,12 @@ module.exports = function(grunt) {
  
   grunt.initConfig({
       
+    // PostCSS
     postcss: {
     options: {
        processors: [
-        require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes 
+        require('autoprefixer')({browsers: 'last 2 versions'}),
+        require('postcss-sorting')
       ]
     },
     dist: {
@@ -45,6 +47,17 @@ module.exports = function(grunt) {
           }
         }
     },
+      
+    // Concat
+    concat: {
+        options: {
+          separator: ';',
+        },
+        dist: {
+          src: ['app/app.js', 'app/app.config.js', 'app/controllers/card.factory.js', 'app/controllers/favorites.controller.js', 'app/controllers/main.controller.js', 'app/directives/card.directive.js', 'app/directives/favcard.directive.js'],
+          dest: 'app/bundle.js',
+        },
+    }
        /*browserify: {
 			dist: {
 				options: {
@@ -58,6 +71,18 @@ module.exports = function(grunt) {
 			}
 		}
       */
+     /*css_mqpacker: {
+        main: {
+          options: {
+            map: true
+          },
+
+          expand: true,
+          cwd: 'src/css/',
+          src: '*.css',
+          dest: 'dest/css/'
+        }
+      }*/
 });
     
     
@@ -70,6 +95,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-css-mqpacker');
+  grunt.loadNpmTasks('grunt-contrib-concat');
     
   grunt.registerTask('default', ['connect', 'watch']);
 };

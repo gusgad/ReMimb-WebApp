@@ -9,5 +9,5 @@ app.controller('favoritesController', ['$scope', '$interval', 'cardInfo', '$loca
 
    $interval(function () {
       $scope.location = $location.path();
-   }, 500);
+   }, 800);
 }]);

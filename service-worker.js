@@ -3,7 +3,7 @@ var CACHE_NAME = 'my-site-cache-v1';
 
 // Array of files needed to be cached
 var urlsToCache = [
-  '/app/',
+  '/app/bundle.js',
   '/node_modules/angular/angular.min.js',
   '/node_modules/firebase/firebase.min.js'
 ];

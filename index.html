@@ -67,6 +67,8 @@
         
         <!-- Views -->
         <main ng-view class="animation"></main>
+        
+        <!-- ng-spinner -->
         <span ng-controller="mainController" us-spinner="{lines: 10, radius: 20, width: 10, length: 4, opacity: 0.2, color: '#512DA8', speed: 2, trail: 50}" ng-show="items.length == 0"></span>
        
 
@@ -75,12 +77,6 @@
       
        
        <!-- Angular scripts -->
-       <script src="app/app.js"></script>
-       <script src="app/app.config.js"></script>
-       <script src="app/controllers/card.factory.js"></script>
-       <script src="app/controllers/main.controller.js"></script>
-       <script src="app/controllers/favorites.controller.js"></script>
-       <script src="app/directives/card.directive.js"></script>
-       <script src="app/directives/favcard.directive.js"></script>
+       <script src="app/bundle.js"></script>
     </body>
 </html>
