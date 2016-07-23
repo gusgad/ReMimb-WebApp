@@ -12,7 +12,7 @@ app.controller('mainController', ['$scope', 'cardInfo', 'Upload', '$firebaseArra
     
     let title = $scope.item.title;
     let description = $scope.item.description;
-    let place = $scope.item.place
+    let place = $scope.item.place;
     
     let image = Upload.base64DataUrl(file).then(function(base64Urls){
         cardInfo.push({

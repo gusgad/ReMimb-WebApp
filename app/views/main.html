@@ -10,25 +10,25 @@
     <div class="exit">
         <label for="toggler-2" class="close-icon">&#10006;</label>
     </div>
-    <form>
+    <form name="itemRegForm" novalidate>
         <div class="file">
             <span>Upload a picture</span>
-            <input type="file" ngf-select ng-model="picFile" accept="image/*" ngf-max-size="4MB" ngf-model-invalid="errorFile" class="upload" />
+            <input type="file" name="file" ngf-select ng-model="picFile" accept="image/*" ngf-max-size="4MB" ngf-model-invalid="errorFile" class="upload" ng-required="true" ng-model="item.img">
         </div>
         <div class="text">
             <label for="sample1">Title</label>
-            <input type="text" id="sample1" ng-model="item.title">
+            <input type="text" name="title" id="sample1" ng-model="item.title" ng-required="true" maxlength="30">
         </div>
         <div class="text">
             <label for="sample1">Description</label>
-            <input type="text" id="sample1" ng-model="item.description">
+            <input type="text" name="description" id="sample1" ng-model="item.description" ng-required="true" maxlength="25">
         </div>
         <div class="text">
             <label for="sample1">Last known place</label>
-            <input type="text" id="sample1" ng-model="item.place">
+            <input type="text" name="place" id="sample1" ng-model="item.place" ng-required="true" maxlength="20">
         </div>
         <div class="adder">
-            <input ng-click="addItem(picFile)" class="item-submit" value="Add">
+            <button ng-click="addItem(picFile)" class="item-submit" ng-disabled="itemRegForm.$invalid">Add</button>
         </div>
     </form>
 </div>

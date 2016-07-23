@@ -97,6 +97,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-css-mqpacker');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
     
   grunt.registerTask('default', ['connect', 'watch']);
 };
