@@ -33,11 +33,15 @@ module.exports = function(grunt) {
             postcss: {
                 files: 'assets/css/*.scss',
 				tasks: ['postcss']
-            }
+            },
             //scripts: {
                 //files: ["./app/**/*.js", "./index.html"],
                 //tasks: ["browserify"]
-            //}
+            //},
+            concat: {
+                files: 'app/*.js',
+                tasks: ['concat']
+            }
 		},
       
        connect: {

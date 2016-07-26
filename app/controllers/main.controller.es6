@@ -1,12 +1,12 @@
-app.controller('mainController', ['$scope', 'cardInfo', 'Upload', '$firebaseArray', '$routeParams', '$timeout', function ($scope, cardInfo, Upload, $firebaseArray, $routeParams, $timeout) {
+app.controller('mainController', ['$scope', 'cardInfo', '$firebaseArray', '$routeParams', '$timeout', function ($scope, cardInfo, $firebaseArray, $routeParams, $timeout) {
 
-  /* DB operations */
+  /* Retreiving data from factory */
 
   let data = $firebaseArray(cardInfo);
     
   $scope.items = data
 
-  // Add items
+  /* Adding items */
   $scope.addItem = function (file) {
     console.log(file)
     
@@ -14,6 +14,7 @@ app.controller('mainController', ['$scope', 'cardInfo', 'Upload', '$firebaseArra
     let description = $scope.item.description;
     let place = $scope.item.place;
     
+    // Converting uploaded image to base64
     let image = Upload.base64DataUrl(file).then(function(base64Urls){
         cardInfo.push({
             title: title,
@@ -26,7 +27,7 @@ app.controller('mainController', ['$scope', 'cardInfo', 'Upload', '$firebaseArra
      
     
       
-    // Clear the inputs after submitting
+    // Clearing up inputs after submitting
     $scope.item.title = '';
     $scope.item.description = '';
     $scope.item.place = '';
@@ -34,20 +35,9 @@ app.controller('mainController', ['$scope', 'cardInfo', 'Upload', '$firebaseArra
       
 
 
-  // Add the card to favorites
+  /* Adding card to favorites */
   $scope.makeFav = function (id) {
     cardInfo.child(id).update({ fav: true });
   };
     
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 }]);

@@ -1,4 +1,4 @@
-app.factory('cardInfo',['$firebaseArray', function() {
+app.factory('cardInfo', function() {
     
     
     let ref = new Firebase("https://remimb-webapp-855cc.firebaseio.com/")

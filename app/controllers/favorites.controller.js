@@ -3,11 +3,11 @@
 
 app.controller('favoritesController', ['$scope', '$interval', 'cardInfo', '$location', '$firebaseArray', function ($scope, $interval, cardInfo, $location, $firebaseArray) {
 
-   /* DB operations */
+  /* Assigning returned data from service */
+  $scope.items = $firebaseArray(cardInfo);
 
-   $scope.items = $firebaseArray(cardInfo);
-
-   $interval(function () {
-      $scope.location = $location.path();
-   }, 800);
+  /* Refreshing the 'Add' icon on route change  || PERFORMANCE BOTTLENECK */
+  $interval(function () {
+    $scope.location = $location.path();
+  }, 800);
 }]);
