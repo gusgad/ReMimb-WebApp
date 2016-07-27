@@ -1,4 +1,4 @@
-/*// Name of the cache that we install
+// Name of the cache that we install
 var CACHE_NAME = 'my-site-cache-v1';
 
 // Array of files needed to be cached
@@ -65,4 +65,4 @@ self.addEventListener('activate', function(event) {
       }));  
     })  
   );  
-});*/
+});

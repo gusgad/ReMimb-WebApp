@@ -9,5 +9,7 @@ app.config(['$locationProvider', '$routeProvider', function config($locationProv
   }).when('/favorites', {
     templateUrl: 'app/views/favorites.html',
     controller: 'favoritesController'
+  }).when('/about', {
+    templateUrl: 'app/views/about.html'
   }).otherwise('/');
 }]);

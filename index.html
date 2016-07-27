@@ -1,6 +1,5 @@
 <!DOCTYPE html>
    <html ng-app="ReMimb">
-   
     <head>
         <link rel="manifest" href="/manifest.json">
         <meta charset="utf-8">
@@ -32,9 +31,6 @@
         <!-- CSS Stylesheet and Normalize.css -->
         <link rel="stylesheet" href="assets/css/normalize.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
-               
-        
-
     </head>
     
     <body>
@@ -47,7 +43,7 @@
             <div class="sidebar-links">
                 <a href="#/"><label>&#127968;</label>Home</a>
                 <a href="#/favorites"><label>&#x2605;</label>Favorites</a>
-                <a href=""><label id="info-link">&#8505;</label>About</a>
+                <a href="#/about"><label id="info-link">&#8505;</label>About</a>
             </div>
         </div>
         <div class="navigation">
@@ -64,9 +60,6 @@
         <!-- ng-spinner -->
         <span style="position: absolute; z-index: -1; top: 50%; left: 50%;" ng-controller="mainController" us-spinner="{lines: 10, radius: 20, width: 10, length: 4, opacity: 0.2, color: '#512DA8', speed: 2, trail: 50}" ng-show="items.length == 0"></span>
        
-
-      
-      
       
        <!-- Angular -->
         <script src="node_modules/angular/angular.min.js"></script>

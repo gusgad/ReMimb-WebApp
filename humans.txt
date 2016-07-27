@@ -3,13 +3,10 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <name> Huseyn Gadirov <github> @husgad
 
-# THANKS
-
-    <name>
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Apache Server Configs, jQuery, Modernizr, Normalize.css, GruntJS, AngularJS, ng-upload

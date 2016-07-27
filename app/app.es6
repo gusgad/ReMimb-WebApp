@@ -1,7 +1,7 @@
 const app = angular.module('ReMimb', ['ngRoute', 'firebase', 'ngAnimate', 'ngFileUpload', 'angularSpinner'])
 
 
-/* Service Worker 
+/* Service Worker */
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
     // Registration was successful
@@ -10,4 +10,4 @@ if ('serviceWorker' in navigator) {
     // registration failed :(
     console.log('ServiceWorker registration failed: ', err);
   });
-}*/
+}

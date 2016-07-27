@@ -1,10 +1,11 @@
-app.controller('mainController', ['$scope', 'cardInfo', '$firebaseArray', '$routeParams', '$timeout', function ($scope, cardInfo, $firebaseArray, $routeParams, $timeout) {
+app.controller('mainController', ['$scope', 'cardInfo', 'Upload', '$firebaseArray', '$routeParams', '$timeout', function ($scope, cardInfo, Upload, $firebaseArray, $routeParams, $timeout) {
 
   /* Retreiving data from factory */
 
   let data = $firebaseArray(cardInfo);
     
   $scope.items = data
+
 
   /* Adding items */
   $scope.addItem = function (file) {

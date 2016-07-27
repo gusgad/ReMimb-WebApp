@@ -6,7 +6,7 @@ $bold7: #512DA8;
 $bold8: #4527A0;
 $bold9: #311B92;
 
-body {
+body, html {
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
     background-color: #f1f1f1;
@@ -37,6 +37,7 @@ body {
         }
         #info-link {
             margin-right: 10px;
+            margin-left: 3px;
         }
         a {
             width: 100%;
@@ -148,7 +149,7 @@ body {
 }
 
 // Title in the favorites section
-.fav-title {
+.section-title {
     height: 35px;
     width: 100%;
     background-color: $normal6;
@@ -423,6 +424,31 @@ favcard-directive {
     display: none;
     &:checked + .bottom-sidebar {
         transform: translateY(-1%);
+    }
+}
+
+// About
+.about {
+    margin-top: 74px;
+    
+}
+
+.about-wrapper {
+    color: dimgray;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+        margin: 15px 0;
+    }
+    h3 {
+        margin: 10px 0;
+    }
+    p {
+        text-align: justify;
+        line-height: 20px;
+        font-size: 14px;
     }
 }
 
