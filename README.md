@@ -16,7 +16,7 @@ According to Lighthouse - a new auditing and performance metrics for Progressive
 
 ## Screenshots
 
-This is the main screen where you can find all of the added items in form of the cards with an image on top, item description in ne middle-bottom and a last know location on the bottom as well as a Remove button, which removes the item permanently from the Firebase database. There is a search bar above the card which allows to filter the items by typing just the letter that item contains. The far top left icon (aka Hamburger menu) allows to switch the views of the app. The right one opens a new panel for selecting an image, filling out the input fields and adding items.
+This is the main screen where you can find all of the added items in form of the cards with an image on top, item description in tne middle-bottom and the last know location on the bottom as well as a Remove button, which removes the item permanently from the Firebase database. There is a search bar above the card which allows to filter the items by typing just the letter that item contains. The far top left icon (aka Hamburger menu) allows to switch the views of the app. The right one opens a new panel for selecting an image, filling out the input fields and adding items.
 ![Main Screen](/assets/img/scr2.png?raw=true)
 
 The menu screen allows switching the sections.
@@ -28,12 +28,12 @@ Here one can add information on a new item, upload or take an image and submit i
 Favorites section contains a list of items that were previously starred and marked as favorite. A favorite item can't be deleted from Favorites section but rather deleted from the main screen for good.
 ![Favorites](/assets/img/scr5.png?raw=true)
 
-A desktop view of the app.
+A desktop version of the app.
 ![Desktop](/assets/img/scr1.png?raw=true)
 
 
-Special thanks to all the Googlers and other developers for having an amazing influence on Progressive Web Apps alongside  
-with their useful conference talks, documentation and articles.
+Special thanks to all Googlers and other open-source developers for having an amazing influence on Progressive Web Apps along with their useful conference talks, documentation and articles.
+
 Technologies used for building this app: JavaScript(ES6), AngularJS, CSS, HTML, Grunt, HTML5 Boilerplate.
 
 
