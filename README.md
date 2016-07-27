@@ -17,19 +17,19 @@ According to Lighthouse - a new auditing and performance metrics for Progressive
 ## Screenshots
 
 This is the main screen where you can find all of the added items in form of the cards with an image on top, item description in ne middle-bottom and a last know location on the bottom as well as a Remove button, which removes the item permanently from the Firebase database. There is a search bar above the card which allows to filter the items by typing just the letter that item contains. The far top left icon (aka Hamburger menu) allows to switch the views of the app. The right one opens a new panel for selecting an image, filling out the input fields and adding items.
-![Main Screen](/assets/img/to/scr2.png?raw=true)
+![Main Screen](/assets/img/scr2.png?raw=true)
 
 The menu screen allows switching the sections.
-![Menu](/assets/img/to/scr3.png?raw=true)
+![Menu](/assets/img/scr3.png?raw=true)
 
 Here one can add information on a new item, upload or take an image and submit it touching the ADD button
-![Adding an item](/assets/img/to/scr4.png?raw=true)
+![Adding an item](/assets/img/scr4.png?raw=true)
 
 Favorites section contains a list of items that were previously starred and marked as favorite. A favorite item can't be deleted from Favorites section but rather deleted from the main screen for good.
-![Favorites](/assets/img/to/scr5.png?raw=true)
+![Favorites](/assets/img/scr5.png?raw=true)
 
 A desktop view of the app.
-![Desktop](/assets/img/to/scr1.png?raw=true)
+![Desktop](/assets/img/scr1.png?raw=true)
 
 
 Special thanks to all the Googlers and other developers for having an amazing influence on Progressive Web Apps alongside  
