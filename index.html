@@ -1,6 +1,7 @@
 <!DOCTYPE html>
    <html ng-app="ReMimb">
     <head>
+        <meta name="google-site-verification" content="Jx1MPHD6K4VmOnFyweg7NGfTU3h0qmQgn0QRiXQ4C8E" />
         <link rel="manifest" href="/manifest.json">
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -49,7 +50,7 @@
         <div class="navigation">
             <div class="icon"><label for="toggler-1">&#9776;</label></div>
             <div class="title"><h1>ReMimb</h1></div>
-            <div ng-controller="favoritesController" class="add" ng-hide="location === '/favorites'">
+            <div ng-controller="favoritesController" class="add" ng-hide="location === '/favorites' || location === '/about' ">
                 <label for="toggler-2">&#x270e;</label>
             </div>
         </div>
