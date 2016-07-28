@@ -32,8 +32,6 @@ A desktop version of the app.
 ![Desktop](/assets/img/scr1.png?raw=true)
 
 
-Special thanks to all Googlers and other open-source developers for having an amazing influence on Progressive Web Apps along with their useful conference talks, documentation and articles.
-
 Technologies used for building this app: JavaScript(ES6), AngularJS, CSS, HTML, Grunt, HTML5 Boilerplate.
 
 
