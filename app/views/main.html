@@ -17,15 +17,15 @@
         </div>
         <div class="text">
             <label for="sample1">Title</label>
-            <input type="text" name="title" id="sample1" ng-model="item.title" ng-required="true" maxlength="30">
+            <input type="text" name="title" id="sample1" ng-model="item.title" ng-required="true" ng-maxlength="30">
         </div>
         <div class="text">
             <label for="sample1">Description</label>
-            <input type="text" name="description" id="sample1" ng-model="item.description" ng-required="true" maxlength="25">
+            <input type="text" name="description" id="sample1" ng-model="item.description" ng-required="true" ng-maxlength="25">
         </div>
         <div class="text">
             <label for="sample1">Last known place</label>
-            <input type="text" name="place" id="sample1" ng-model="item.place" ng-required="true" maxlength="20">
+            <input type="text" name="place" id="sample1" ng-model="item.place" ng-required="true" ng-maxlength="20">
         </div>
         <div class="adder">
             <button ng-click="addItem(picFile)" class="item-submit" ng-disabled="itemRegForm.$invalid">Add</button>
