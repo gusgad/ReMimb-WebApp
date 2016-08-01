@@ -4,4 +4,4 @@ app.directive('cardDirective', ['$timeout', function($timeout) {
         scope: false,
         templateUrl: 'app/views/card.html'
     }
-}])
+}]);

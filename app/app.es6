@@ -1,4 +1,4 @@
-const app = angular.module('ReMimb', ['ngRoute', 'firebase', 'ngAnimate', 'ngFileUpload', 'angularSpinner'])
+const app = angular.module('ReMimb', ['ngRoute', 'firebase', 'ngAnimate', 'ngFileUpload', 'angularSpinner']);
 
 
 /* Service Worker */

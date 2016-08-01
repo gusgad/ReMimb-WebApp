@@ -4,4 +4,4 @@ app.directive('favcardDirective', [function() {
         scope: false,
         templateUrl: 'app/views/favCard.html'
     }
-}])
+}]);

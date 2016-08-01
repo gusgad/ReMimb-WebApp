@@ -4,12 +4,12 @@ app.controller('mainController', ['$scope', 'cardInfo', 'Upload', '$firebaseArra
 
   let data = $firebaseArray(cardInfo);
     
-  $scope.items = data
+  $scope.items = data;
 
 
   /* Adding items */
   $scope.addItem = function (file) {
-    console.log(file)
+    console.log(file);
     
     let title = $scope.item.title;
     let description = $scope.item.description;
